@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>结果</title>
+</head>
+<body>
+    <div th:if="${status}==fail">
+        <div>用户名已被使用，请换一个。</div>
+        <div>
+            <a th:href="@{/register.html}">回到注册页面</a>
+        </div>
+    </div>
+    <div th:if="${status}==success">注册成功，去窗口开始聊天吧！</div>
+</body>
+</html>
