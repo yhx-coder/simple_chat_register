@@ -8,7 +8,7 @@
     <div th:if="${status}==fail">
         <div>用户名已被使用，请换一个。</div>
         <div>
-            <a th:href="@{/register.html}">回到注册页面</a>
+            <a th:href="@{/user/register}">回到注册页面</a>
         </div>
     </div>
     <div th:if="${status}==success">注册成功，去窗口开始聊天吧！</div>

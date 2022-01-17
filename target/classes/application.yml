@@ -1,7 +1,7 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/smallChat
+    url: jdbc:mysql://localhost:3306/smallChat?characterEncoding=utf-8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root

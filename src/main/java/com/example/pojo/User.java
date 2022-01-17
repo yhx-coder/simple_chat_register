@@ -2,7 +2,10 @@ package com.example.pojo;
 
 import lombok.Data;
 import lombok.ToString;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
+
+import javax.validation.constraints.NotBlank;
 
 /**
  * @author: ming
@@ -13,7 +16,12 @@ import org.springframework.stereotype.Component;
 @ToString
 @Component
 public class User {
+
     private Integer id;
+
+    @NotBlank(message = "用户名不能为空！")
     private String username;
+
+    @NotBlank(message = "密码不能为空！")
     private String password;
 }
